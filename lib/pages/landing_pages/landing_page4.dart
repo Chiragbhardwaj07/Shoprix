@@ -74,7 +74,9 @@ class Landing_page4 extends StatelessWidget {
                 width: double.infinity,
                 child: full_button(
                   text: 'Get Started',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/home');
+                  },
                 ),
               ),
             ),

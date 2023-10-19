@@ -8,9 +8,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: '/home',
+    initialRoute: '/lp',
     routes: {
-      '/lp': (context) => Landing_page4(),
+      '/lp': (context) => LandingPage(),
       '/home': (context) => Home_Page(),
     },
     theme: lightTheme,
