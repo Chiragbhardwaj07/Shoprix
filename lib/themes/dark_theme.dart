@@ -8,5 +8,5 @@ ThemeData darkTheme = ThemeData(
     colorScheme: ColorScheme.dark(
       background: Colors.black,
       primary: Color(0xFFDB3022),
-      secondary: Color(0xff),
+      secondary: Color(0xff9B9B9B),
     ));

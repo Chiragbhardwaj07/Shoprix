@@ -28,7 +28,7 @@ class Landing_page2 extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            'A Pit stop',
+                            'A pit stop',
                             style: TextStyle(
                                 fontSize: 50, fontWeight: FontWeight.w200),
                           ),

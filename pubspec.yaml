@@ -36,7 +36,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   smooth_page_indicator: ^1.1.0
-  flutter_image_slideshow: any
+  flutter_carousel_widget: ^2.1.2
+  google_fonts: ^6.1.0
   
 
 dev_dependencies:
@@ -76,12 +77,12 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: CircularStd
-      fonts:
-        - asset: fonts/CircularStd-Black.ttf
-        - asset: fonts/CircularStd-BlackItalic.ttf
-          style: italic
+  # fonts:
+  #   - family: Noto_Sans
+  #     fonts:
+  #       - asset: fonts/NotoSans-Black.ttf
+  #       - asset: fonts/NotoSans-BlackItalic.ttf
+  #         style: italic
         
   #   - family: Trajan Pro
   #     fonts:

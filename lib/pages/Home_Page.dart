@@ -1,76 +1,108 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
-// import 'package:flutter_cache_manager/flutter_cache_manager.dart';
+// ignore_for_file: sort_child_properties_last, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-class Home_Page extends StatelessWidget {
+import 'package:flutter/material.dart';
+import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
+import 'package:e_commerceapp_ui/utils/button.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class Home_Page extends StatefulWidget {
   const Home_Page({super.key});
 
   @override
+  State<Home_Page> createState() => _Home_PageState();
+}
+
+class _Home_PageState extends State<Home_Page> {
+  @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: SingleChildScrollView(
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Stack(
               children: [
-                ImageSlideshow(
-                  width: double.infinity,
-                  initialPage: 0,
-                  height: 500,
-                  children: [
-                    Image.asset(
-                      'assets/slide1n.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                    Image.asset(
-                      'assets/slide3n.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                    Image.asset(
-                      'assets/slide5n.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                    Image.asset(
-                      'assets/slide2n.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                    Image.asset(
-                      'assets/slide4n.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                    Image.asset(
-                      'assets/slide6n.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                  ],
-                  onPageChanged: (value) {
-                    print('Page changed: $value');
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    return FlutterCarousel(
+                      options: CarouselOptions(
+                        height: 500.0,
+                        enlargeCenterPage: true,
+                        showIndicator: true,
+                        slideIndicator: CircularSlideIndicator(),
+                        autoPlay: true,
+                        autoPlayInterval: const Duration(seconds: 3),
+                        pageSnapping: false,
+                      ),
+                      items: [
+                        Image.asset(
+                          filterQuality: FilterQuality.low,
+                          'assets/slide1n.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                        Image.asset(
+                          filterQuality: FilterQuality.low,
+                          'assets/slide3n.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                        Image.asset(
+                          filterQuality: FilterQuality.low,
+                          'assets/slide5n.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                        Image.asset(
+                          filterQuality: FilterQuality.low,
+                          'assets/slide2n.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                        Image.asset(
+                          filterQuality: FilterQuality.low,
+                          'assets/slide6n.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                        Image.asset(
+                          filterQuality: FilterQuality.low,
+                          'assets/slide4n.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ],
+                    );
                   },
-                  autoPlayInterval: 3000,
-                  isLoop: true,
                 ),
                 // Add a Container with a Column for text and a button
-                Container(
-                  alignment: Alignment.bottomLeft,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Your Text Here',
-                        style: TextStyle(
-                          fontSize: 24,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                Positioned(
+                  bottom: 30,
+                  left: 40,
+                  right: 0,
+                  child: Container(
+                    // decoration: BoxDecoration(
+                    //   gradient: LinearGradient(colors: [
+                    //     Colors.black.withOpacity(0.5),
+                    //     Colors.black.withOpacity(0.5),
+                    //   ]),
+                    // ),
+                    alignment: Alignment.bottomLeft,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Fashion Sale!',
+                          style: GoogleFonts.notoSansCanadianAboriginal(
+                              color: Colors.white,
+                              decoration: TextDecoration.none,
+                              fontSize: 50),
                         ),
-                      ),
-                      SizedBox(height: 20), // Adjust the spacing as needed
-                      ElevatedButton(
-                        onPressed: () {
-                          // Button click action
-                        },
-                        child: Text('Your Button Text'),
-                      ),
-                    ],
+
+                        SizedBox(height: 20), // Adjust the spacing as needed
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
+                          child: SizedBox(
+                            width: 200,
+                            child: full_button(text: 'Explore', onTap: () {}),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],
