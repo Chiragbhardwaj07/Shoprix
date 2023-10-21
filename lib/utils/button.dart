@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, unnecessary_new
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class full_button extends StatelessWidget {
   final String text;
@@ -14,13 +15,13 @@ class full_button extends StatelessWidget {
           onTap, // Provide the callback function for the button's onPressed event
       child: Padding(
         padding:
-            const EdgeInsets.all(16.0), // Add more padding to expand the button
+            const EdgeInsets.all(12.0), // Add more padding to expand the button
         child: Text(
           text,
-          style: TextStyle(
+          style: GoogleFonts.notoSansJp(
             fontWeight: FontWeight.bold,
             color: Colors.white, // Set the text color to white
-            fontSize: 18, // Set the text font size (adjust to your preference)
+            fontSize: 20,
           ),
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Profile_Page extends StatelessWidget {
   const Profile_Page({super.key});
@@ -6,6 +7,16 @@ class Profile_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.background,
+        title: Text(
+          'Profile',
+          style: GoogleFonts.notoSansJp(
+              fontSize: 20, color: Theme.of(context).colorScheme.secondary),
+        ),
+        automaticallyImplyLeading: false,
+        centerTitle: true,
+      ),
       body: Center(
         child: Text('Your Profile'),
       ),

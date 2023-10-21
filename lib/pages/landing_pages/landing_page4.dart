@@ -75,7 +75,8 @@ class Landing_page4 extends StatelessWidget {
                 child: full_button(
                   text: 'Get Started',
                   onTap: () {
-                    Navigator.pushNamed(context, '/navbar');
+                    Navigator.restorablePushReplacementNamed(
+                        context, '/navbar');
                   },
                 ),
               ),
