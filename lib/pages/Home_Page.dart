@@ -127,7 +127,8 @@ class _Home_PageState extends State<Home_Page> {
                     ),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {Navigator.pushNamed(
+                          context, '/new');},
                       child: Text(
                         'View all',
                         style: TextStyle(

@@ -14,6 +14,16 @@ class Favorites_Page extends StatelessWidget {
           style: GoogleFonts.notoSansJp(
               fontSize: 20, color: Theme.of(context).colorScheme.secondary),
         ),
+        actions: [
+          IconButton(
+              highlightColor: Theme.of(context).colorScheme.primary,
+              onPressed: () {},
+              icon: Icon(
+                Icons.search,
+                color: Theme.of(context).colorScheme.secondary,
+                size: 25,
+              )),
+        ],
         automaticallyImplyLeading: false,
         centerTitle: true,
       ),

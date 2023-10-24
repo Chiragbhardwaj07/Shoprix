@@ -16,6 +16,16 @@ class Bag_Page extends StatelessWidget {
         ),
         automaticallyImplyLeading: false,
         centerTitle: true,
+        actions: [
+          IconButton(
+              highlightColor: Theme.of(context).colorScheme.primary,
+              onPressed: () {},
+              icon: Icon(
+                Icons.search_outlined,
+                color: Theme.of(context).colorScheme.secondary,
+                size: 25,
+              )),
+        ],
       ),
       body: Center(
         child: Text('Bag items'),

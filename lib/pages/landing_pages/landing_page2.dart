@@ -30,14 +30,16 @@ class Landing_page2 extends StatelessWidget {
                           Text(
                             'A pit stop',
                             style: TextStyle(
-                                fontSize: 50, fontWeight: FontWeight.w200),
+                                fontSize: 50,
+                                fontWeight: FontWeight.w200,
+                                color: Colors.white),
                           ),
                           SizedBox(
                             width: 10,
                           ),
                           Text(
                             'for',
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                         ],
                       ),
@@ -46,7 +48,8 @@ class Landing_page2 extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 40,
                             fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.bold),
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       )
                     ]),
               ),
