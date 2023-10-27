@@ -28,7 +28,7 @@ class Favorites_Page extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Text('Favoites'),
+        child: Text('No items in Favorites yet!'),
       ),
     );
   }

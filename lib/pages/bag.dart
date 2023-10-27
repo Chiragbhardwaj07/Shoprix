@@ -28,7 +28,7 @@ class Bag_Page extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Text('Bag items'),
+        child: Text('Bag is empty!'),
       ),
     );
   }

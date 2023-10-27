@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: '/new',
+    initialRoute: '/lp',
     routes: {
       '/lp': (context) => LandingPage(),
       '/home': (context) => Home_Page(),
@@ -17,7 +17,7 @@ void main() {
       '/new': (context) => New_items(),
     },
     theme: lightTheme,
-    darkTheme: darkTheme,
+    // darkTheme: darkTheme,
   ));
 }
 

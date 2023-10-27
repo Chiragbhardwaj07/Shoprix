@@ -39,10 +39,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal:8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Card(
-              shape:
-                  RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25)),
               elevation: 3,
               child: Container(
                 decoration: BoxDecoration(
@@ -67,12 +67,14 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                       Tab(
                         child: Text("Men",
                             style: TextStyle(
-                                color: Theme.of(context).colorScheme.secondary)),
+                                color:
+                                    Theme.of(context).colorScheme.secondary)),
                       ),
                       Tab(
                         child: Text("Kids",
                             style: TextStyle(
-                                color: Theme.of(context).colorScheme.secondary)),
+                                color:
+                                    Theme.of(context).colorScheme.secondary)),
                       ),
                     ]),
               ),
@@ -85,41 +87,56 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
               children: [
                 // Contents for the "Women" tab
                 Column(
-                  children: [SizedBox(height: 20,),
-                    Container(
-                    width: 343,
-                    height: 100,
-                    decoration: ShapeDecoration(
-                      color: Color(0xFFDB3022),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                      shadows: [
-                        BoxShadow(
-                          color: Color(0x14000000),
-                          blurRadius: 25,
-                          offset: Offset(0, 1),
-                          spreadRadius: 0,
-                        ),
-                      ],
+                  children: [
+                    SizedBox(
+                      height: 20,
                     ),
-                    child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.only(top:30),
-                        child: Column(
-                          children: [
-                            Text('S U M M E R   S A L E S', style: GoogleFonts.abel(fontStyle: FontStyle.italic,fontSize: 24,fontWeight: FontWeight.w400,color: Colors.white)),
-                            Text('Upto 50% off', style:  GoogleFonts.abel(color: Colors.white,
-                              fontSize: 14,fontWeight: FontWeight.w500,),)
-                          ],
+                    Container(
+                      width: 343,
+                      height: 100,
+                      decoration: ShapeDecoration(
+                        color: Color(0xFFDB3022),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8)),
+                        shadows: [
+                          BoxShadow(
+                            color: Color(0x14000000),
+                            blurRadius: 25,
+                            offset: Offset(0, 1),
+                            spreadRadius: 0,
+                          ),
+                        ],
+                      ),
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 30),
+                          child: Column(
+                            children: [
+                              Text('S U M M E R   S A L E S',
+                                  style: GoogleFonts.abel(
+                                      fontStyle: FontStyle.italic,
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white)),
+                              Text(
+                                'Upto 50% off',
+                                style: GoogleFonts.abel(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
-                      onTap: () {Navigator.pushNamed(
-                          context, '/new');
-
+                      onTap: () {
+                        Navigator.pushNamed(context, '/new');
                       },
                       child: Container(
                         width: 343,
@@ -134,7 +151,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -185,9 +203,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -202,7 +221,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -237,7 +257,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/LP4.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
@@ -253,9 +273,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -270,7 +291,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -305,7 +327,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/femaleshoes.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
@@ -321,9 +343,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -338,7 +361,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -373,7 +397,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/wacc.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
@@ -393,14 +417,18 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                 ),
 
                 // Contents for the "men" tab
-               Column(
-                  children: [SizedBox(height: 20,),
+                Column(
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       width: 343,
                       height: 100,
                       decoration: ShapeDecoration(
                         color: Color(0xFFDB3022),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8)),
                         shadows: [
                           BoxShadow(
                             color: Color(0x14000000),
@@ -412,20 +440,32 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                       ),
                       child: Center(
                         child: Padding(
-                          padding: const EdgeInsets.only(top:30),
+                          padding: const EdgeInsets.only(top: 30),
                           child: Column(
                             children: [
-                              Text('E N D  O F  S E A S O N !', style: GoogleFonts.abel(fontStyle: FontStyle.italic,fontSize: 24,fontWeight: FontWeight.w400,color: Colors.white)),
-                              Text('Upto 70% off', style:  GoogleFonts.abel(color: Colors.white,
-                                fontSize: 14,fontWeight: FontWeight.w500,),)
+                              Text('E N D  O F  S E A S O N !',
+                                  style: GoogleFonts.abel(
+                                      fontStyle: FontStyle.italic,
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white)),
+                              Text(
+                                'Upto 70% off',
+                                style: GoogleFonts.abel(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              )
                             ],
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -440,7 +480,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -475,7 +516,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/slide1n.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
@@ -491,9 +532,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -508,7 +550,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -543,7 +586,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/slide2n.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
@@ -559,9 +602,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -576,7 +620,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -611,7 +656,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/menshoes.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
@@ -627,9 +672,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -644,7 +690,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -679,7 +726,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/menacc.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
@@ -700,13 +747,17 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
 
                 // Contents for the "Children" tab
                 Column(
-                  children: [SizedBox(height: 20,),
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       width: 343,
                       height: 100,
                       decoration: ShapeDecoration(
                         color: Color(0xFFDB3022),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8)),
                         shadows: [
                           BoxShadow(
                             color: Color(0x14000000),
@@ -718,20 +769,32 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                       ),
                       child: Center(
                         child: Padding(
-                          padding: const EdgeInsets.only(top:30),
+                          padding: const EdgeInsets.only(top: 30),
                           child: Column(
                             children: [
-                              Text('SUMMER SALES', style: GoogleFonts.abel(fontStyle: FontStyle.italic,fontSize: 24,fontWeight: FontWeight.w400,color: Colors.white)),
-                              Text('Upto 50% off', style:  GoogleFonts.abel(color: Colors.white,
-                                fontSize: 14,fontWeight: FontWeight.w500,),)
+                              Text('SUMMER SALES',
+                                  style: GoogleFonts.abel(
+                                      fontStyle: FontStyle.italic,
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white)),
+                              Text(
+                                'Upto 50% off',
+                                style: GoogleFonts.abel(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              )
                             ],
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -746,7 +809,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -797,9 +861,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -814,7 +879,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -865,9 +931,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -882,7 +949,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -917,7 +985,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/kidsshoes.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
@@ -933,9 +1001,10 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     GestureDetector(
-
                       onTap: () {},
                       child: Container(
                         width: 343,
@@ -950,7 +1019,8 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                   shadows: [
                                     BoxShadow(
                                       color: Color(0x14000000),
@@ -985,7 +1055,7 @@ class _Shop_PageState extends State<Shop_Page> with TickerProviderStateMixin {
                                 height: 100,
                                 decoration: ShapeDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/LP1.jpg'),
+                                    image: AssetImage('assets/kidsacc.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                   shape: RoundedRectangleBorder(
